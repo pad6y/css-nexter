@@ -52,6 +52,12 @@
    &:hover {
       background-color: $color-primary-dark;
    }
+   
+   @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+      padding: 2.8rem 3.8rem;
+   }
+   
 }
 
 .mb-sm {

@@ -12,9 +12,8 @@
    grid-gap: 2rem;
    align-items: center;
    
-   &__item {
-      
-      
+   @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    }
    
    &__link:link,
@@ -29,7 +28,9 @@
       display: block;
       transition: all .2s;
       
-      
+      @media only screen and (max-width: $bp-small) {
+         font-size: 1.8rem;
+      }
    }
    
    &__link:hover,
@@ -45,4 +46,7 @@
    margin-top: 6rem;
    text-align: center;
    
+   @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+   }
 }

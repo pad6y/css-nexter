@@ -16,18 +16,37 @@
       grid-column-gap: 2rem;
       grid-row-gap: 5vh;
       align-items: center;
+      
+      @media only screen and (max-width: $bp-smallest) {
+         grid-template-columns: max-content;
+         grid-row-gap: 2vh;
+         justify-items: center;
+      }
    }
    
    &__img {
       width: 7rem;
       border-radius: 50%;
       display: block;
+      
+      @media only screen and (max-width: $bp-large) {
+         width: 5rem;
+      }
    }
    
    &__sold {
       text-transform: uppercase;
       color: $color-grey-light-2;
       margin-top: -3px;
+      
+      @media only screen and (max-width: $bp-smallest) {
+         display: grid;
+         justify-items: center;
+      }
+   }
+   
+   @media only screen and (max-width: $bp-large) {
+      padding: 0;
    }
    
 }
